@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding:0;
+  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center; 
+    
+}
+.btn{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: black 1px solid;
+    margin-top:40px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 0s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    bottom: 500px;
+    left: 1000px;
+    border-width: 3px;
+  
+    transition-property: transform;
+    transition-duration: 0.5s; 
+}
+.btn:hover {
+    transform: scale(1.2);
+    color: red;
+}
+@keyframes btn {
+    0%   {opacity:0}
+    100% {opacity: 1}
+}
+.title{
+    color: black;
+}
+.api {
+    color: black;
+}
